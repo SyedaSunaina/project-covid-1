@@ -1,8 +1,7 @@
 <?php
 //Database Connection
 include("connection.php");
-// Session Start
-session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,12 +41,12 @@ session_start();
                   <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-9">
                      <div class="navbar-area" >
                         <nav class="site-navbar">
-                           <ul>
-                              <li><a class="active" href="#home">Home</a></li>
-                              <li><a href="#about">About</a></li>
-                              <li><a href="index.html" class="logo_midle">Pandemix</a></li>
-                              <li><a href="#action">Actions</a></li>
-                              <li><a href="contact.html">Contact </a></li>
+                        <ul>
+                              <li><a class="active" href="index.php#home">Home</a></li>
+                              <li><a href="index.php#about">About</a></li>
+                              <li><a href="index.php" class="logo_midle">Pandemix</a></li>
+                              <li><a href="index.php#action">Actions</a></li>
+                              <li><a href="contact.php">Contact </a></li>
                            </ul>
                            <button class="nav-toggler">
                            <span></span>
@@ -140,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute the query
         if (mysqli_query($con, $query)) {
-            header("Location:login.php");
+            header("location: login.php");
         } else {
             echo "Error: " . mysqli_error($con);
         }
