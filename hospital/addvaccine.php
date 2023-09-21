@@ -31,10 +31,9 @@ if (!isset($_SESSION['hospital_id'])) {
             <a href="#"><img src="../images/covidlogo.png" alt="" style="width:120px ; height:120; padding: 20px;"></a>
         </header>
         <ul class="nav">
-           
             <li>
-            <a href="appiontments.php">
-                    <i class="fas fa-users"></i>Appointments
+                <a href="dashboard.php">
+                    <i class="fas fa-tachometer-alt"></i>Dashboard
                 </a>
             </li>
             <li>
@@ -61,10 +60,6 @@ if (!isset($_SESSION['hospital_id'])) {
                     </a>
 
                     <ul class="dropdown-menu">
-
-            <li><a href="#"><i class="fa-regular fa-bell"></i> Notifications</a></li>
-            <li><a href="../logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-          </ul>
                         <li><a href="#"><i class="zmdi zmdi-notifications text-danger"></i> Notifications</a></li>
                         <li><a href="../login.php">Logout</a></li>
                     </ul>
@@ -103,9 +98,8 @@ if (!isset($_SESSION['hospital_id'])) {
     <!-- ... Rest of your HTML code ... -->
 
     <!-- Form to insert vaccine data -->
-    <h1 class="add-vaccine">ADD VACCINE</h1>
-    <form method="POST" style="margin-left: 400px; width:50%;">
-        <div class="form-group" >
+    <form method="POST">
+        <div class="form-group">
             <label for="vaccine_name">Vaccine Name:</label>
             <input type="text" class="form-control" id="vaccine_name" name="vaccine_name" required>
         </div>
