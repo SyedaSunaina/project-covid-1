@@ -17,7 +17,7 @@ if (!isset($_SESSION['admin_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Record</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="../images/covidlogo.png">
+    <link rel="icon" href="../images/corona_icon.png">
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
@@ -29,6 +29,7 @@ if (!isset($_SESSION['admin_id'])) {
     <div id="sidebar">
         <header>
             <a href="#"><img src="../images/covidlogo.png" alt="" style="width:120px ; height:120; padding: 20px;"></a>
+            <a href="#"><img src="../images/corona_icon.png" alt="" style="width:70px ; padding: 20px;"></a>
         </header>
         <ul class="nav">
             <li>
@@ -83,6 +84,9 @@ if (!isset($_SESSION['admin_id'])) {
             <li><a href="#"><i class="fa-regular fa-bell"></i> Notifications</a></li>
             <li><a href="../logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
           </ul>
+                        <li><a href="#"><i class="zmdi zmdi-notifications text-danger"></i> Notifications</a></li>
+                        <li><a href="../logout.php">Logout</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
